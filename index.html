@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,17 +6,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <header class="p-6 bg-gray-800 flex justify-between items-center">
-    <img src="ES-removebg-preview.png" alt="ES Store Logo" class="h-16">
+  <header class="p-6 bg-gray-800 flex justify-center items-center">
     <nav class="space-x-4">
-      <a href="index.html" class="text-white hover:text-yellow-300">الرئيسية</a>
-      <a href="products.html" class="text-white hover:text-yellow-300">المنتجات</a>
+      <a href="index.html" class="text-white hover:text-yellow-300 ml-4">الرئيسية</a>
+      <a href="products.html" class="text-white hover:text-yellow-300 ml-4">المنتجات</a>
       <a href="tools.html" class="text-white hover:text-yellow-300">الأدوات</a>
     </nav>
   </header>
-  <main class="text-center mt-20">
+  <main class="flex flex-col items-center justify-center mt-20 text-center">
+    <img src="ES-removebg-preview.png" alt="ES Store Logo" class="h-32 mb-6">
     <h1 class="text-4xl font-bold mb-4">مرحبًا بك في متجر ES Store</h1>
-    <p class="text-lg">نقدّم لك أفضل أدوات ومنتجات الديسكورد مثل البوتات، البوستات، ونسخ السيرفرات</p>
+    <p class="text-lg mb-6">نقدّم لك أفضل أدوات ومنتجات الديسكورد مثل البوتات، البوستات، ونسخ السيرفرات</p>
+    <div class="space-x-4">
+      <a href="products.html" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded">عرض المنتجات</a>
+      <a href="tools.html" class="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded">عرض الأدوات</a>
+    </div>
   </main>
 </body>
 </html>
