@@ -1,27 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>ES Store - المنتجات</title>
+  <title>منتجات ES Store</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-900 text-white font-sans">
-  <header class="p-6 bg-gray-800 flex justify-between items-center">
-    <img src="ES-removebg-preview.png" alt="ES Store Logo" class="h-16">
+  <header class="p-6 bg-gray-800 flex justify-center items-center">
     <nav class="space-x-4">
-      <a href="index.html" class="text-white hover:text-yellow-300">الرئيسية</a>
-      <a href="products.html" class="text-white hover:text-yellow-300">المنتجات</a>
+      <a href="index.html" class="text-white hover:text-yellow-300 ml-4">الرئيسية</a>
+      <a href="products.html" class="text-white hover:text-yellow-300 ml-4">المنتجات</a>
       <a href="tools.html" class="text-white hover:text-yellow-300">الأدوات</a>
     </nav>
   </header>
+
   <main class="p-10">
-    <h1 class="text-3xl font-bold mb-6">منتجاتنا</h1>
-    <ul class="space-y-4">
-      <li>✅ بوت إدارة متكامل للسيرفرات</li>
-      <li>✅ بوستات جاهزة احترافية</li>
-      <li>✅ أدوات نسخ السيرفر + توليد قنوات</li>
-    </ul>
+    <h1 class="text-3xl font-bold text-center mb-8">المنتجات المتوفرة</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- منتج 1 -->
+      <div class="bg-gray-800 rounded-lg p-4 text-center">
+        <img src="https://via.placeholder.com/150" alt="Bot 1" class="mx-auto mb-4 rounded">
+        <h2 class="text-xl font-semibold mb-2">بوت ترحيب</h2>
+        <p class="mb-4 text-sm">بوت يقوم بترحيب تلقائي للأعضاء مع نظام تلقائي للصور.</p>
+        <div class="flex justify-center gap-4">
+          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-4 rounded">شراء</button>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded">إضافة للسلة</button>
+        </div>
+      </div>
+
+      <!-- منتج 2 -->
+      <div class="bg-gray-800 rounded-lg p-4 text-center">
+        <img src="https://via.placeholder.com/150" alt="Bot 2" class="mx-auto mb-4 rounded">
+        <h2 class="text-xl font-semibold mb-2">أداة نسخ سيرفر</h2>
+        <p class="mb-4 text-sm">انسخ أي سيرفر بكامل إعداداته خلال ثوانٍ.</p>
+        <div class="flex justify-center gap-4">
+          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-4 rounded">شراء</button>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded">إضافة للسلة</button>
+        </div>
+      </div>
+
+      <!-- منتج 3 -->
+      <div class="bg-gray-800 rounded-lg p-4 text-center">
+        <img src="https://via.placeholder.com/150" alt="Bot 3" class="mx-auto mb-4 rounded">
+        <h2 class="text-xl font-semibold mb-2">بوستات جاهزة</h2>
+        <p class="mb-4 text-sm">بوستات احترافية جاهزة للنشر في ديسكورد مع تنسيق وزخرفة.</p>
+        <div class="flex justify-center gap-4">
+          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-4 rounded">شراء</button>
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-1 px-4 rounded">إضافة للسلة</button>
+        </div>
+      </div>
+
+    </div>
   </main>
 </body>
 </html>
