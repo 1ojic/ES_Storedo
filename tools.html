@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>ES Store - الأدوات</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="p-6 bg-gray-800 flex justify-between items-center">
+    <img src="ES-removebg-preview.png" alt="ES Store Logo" class="h-16">
+    <nav class="space-x-4">
+      <a href="index.html" class="text-white hover:text-yellow-300">الرئيسية</a>
+      <a href="products.html" class="text-white hover:text-yellow-300">المنتجات</a>
+      <a href="tools.html" class="text-white hover:text-yellow-300">الأدوات</a>
+    </nav>
+  </header>
+  <main class="p-10">
+    <h1 class="text-3xl font-bold mb-6">أدوات ديسكورد</h1>
+    <p class="mb-4">جرب أداة إنشاء بوست ترحيبي:</p>
+    <input id="nameInput" type="text" placeholder="اكتب اسم العضو" class="text-black px-4 py-2 rounded">
+    <button onclick="generatePost()" class="bg-yellow-400 text-black px-4 py-2 rounded ml-2">توليد</button>
+    <p id="output" class="mt-4 text-yellow-300 font-bold"></p>
+  </main>
+  <script>
+    function generatePost() {
+      const name = document.getElementById('nameInput').value;
+      document.getElementById('output').innerText = `🎉 أهلًا فيك يا ${name} نورت السيرفر!`;
+    }
+  </script>
+</body>
+</html>
